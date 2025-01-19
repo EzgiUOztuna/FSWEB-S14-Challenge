@@ -25,7 +25,7 @@ public class HealthyBurger extends Hamburger{
     public double itemizeHamburger() {
         double totalPrice = super.itemizeHamburger();
         if (healthyExtra1Name != null) {
-            totalPrice += healthyExtra1Price;
+            totalPrice += this.healthyExtra1Price;
         }
         if (healthyExtra2Name != null) {
             totalPrice += healthyExtra2Price;

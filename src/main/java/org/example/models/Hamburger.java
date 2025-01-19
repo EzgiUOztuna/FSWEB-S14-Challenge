@@ -32,7 +32,7 @@ public class Hamburger {
     }
 
     public double getPrice() {
-        return price;
+        return itemizeHamburger();
     }
 
     public String getBreadRollType() {
@@ -62,13 +62,13 @@ public class Hamburger {
     public double itemizeHamburger() {
         System.out.println("Hamburger: " + name + "Meat: " + meat + "Bread Type: " + breadRollType + "Additions: " +addition1Name + "," + addition2Name + "," + addition3Name );
         double totalPrice = price;
-        if (addition1Name != null) {
+        if (addition1Name != null && addition1Price >0) {
             totalPrice += addition1Price;
         }
-        if (addition2Name != null) {
+        if (addition2Name != null && addition2Price >0) {
             totalPrice += addition2Price;
         }
-        if (addition3Name != null) {
+        if (addition3Name != null && addition1Price >0) {
             totalPrice += addition3Price;
         }
         return totalPrice;
